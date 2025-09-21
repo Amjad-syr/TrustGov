@@ -1,0 +1,336 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "buyer_id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "seller_id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "property_id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "property_location",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "total_amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "paid_amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "notes",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "encrypted_iris_buyer",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "encrypted_iris_seller",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "date",
+				"type": "string"
+			}
+		],
+		"name": "PurchaseContractAdded",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_buyer_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_seller_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_property_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_property_location",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_description",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_total_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_paid_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_notes",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encrypted_iris_buyer",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_encrypted_iris_seller",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_date",
+				"type": "string"
+			}
+		],
+		"name": "addPurchaseContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_newOwner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "contractsCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getContractById",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "buyer_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "seller_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "property_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "property_location",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "total_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paid_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "notes",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encrypted_iris_buyer",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encrypted_iris_seller",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "date",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "purchaseContracts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "buyer_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "seller_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "property_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "property_location",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "total_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paid_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "notes",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encrypted_iris_buyer",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "encrypted_iris_seller",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "date",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
